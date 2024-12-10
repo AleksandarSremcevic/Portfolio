@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #121212;
+    color: #fff;
+    overflow-x: hidden;
+    height: 100vh;
+}
+
+.background-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+}
+
+#background-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    padding: 20px;
+    opacity: 0;
+    animation: fadeIn 2s ease-in-out forwards;
+}
+
+h1 {
+    font-size: 4rem;
+    margin-bottom: 10px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+p {
+    font-size: 1.5rem;
+    color: #ccc;
+    animation: fadeIn 3s ease-in-out;
+}
+
+#bio {
+    padding: 50px;
+    text-align: center;
+    background-color: #1e1e1e;
+    animation: slideInFromBottom 1s ease-out;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #121212;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin-bottom: 10px; /* Add some spacing below the email */
+    font-size: 1rem;
+}
+
+a {
+    color: #00aaff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Button Style */
+.transition-button {
+    background-color: #00aaff;
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+.transition-button:hover {
+    background-color: #0077cc;
+    transform: scale(1.1);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromBottom {
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* LinkedIn Container */
+.linkedin-container {
+    margin-top: 10px;
+}
+
+.linkedin-logo {
+    width: 40px; /* Set size for the LinkedIn logo */
+    height: 40px;
+    border-radius: 5px; /* Add a subtle rounded corner */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.linkedin-logo:hover {
+    transform: scale(1.1); /* Slight zoom effect */
+    box-shadow: 0 4px 10px rgba(0, 170, 255, 0.5);
+}
+ 
