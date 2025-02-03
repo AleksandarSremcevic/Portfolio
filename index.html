@@ -1,46 +1,146 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Aleksandar Sremcevic | Portfolio</title>
-    <link rel="stylesheet" href="main.css">
+<title>My Portfolio</title>
+<link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <div class="background-container">
-        <video autoplay muted loop id="background-video">
-            <source src="vid1.mp4" type="video/mp4">
-        </video>
-    </div>
 
+    <!-- HEADER SECTION -->
     <header>
-        <div class="intro">
-            <h1>Aleksandar Sremcevic</h1>
-            <p>Souther Alberta Institute Of Technology Student - UX Designer</p>
+        <div class="video-container">
+            <video class="header-video active" autoplay muted loop>
+                <source src="Videos/1.mp4" type="video/mp4">
+            </video>
+            <video class="header-video" autoplay muted loop>
+                <source src="Videos/2.mp4" type="video/mp4">
+            </video>
+            <video class="header-video" autoplay muted loop>
+                <source src="Videos/3.mp4" type="video/mp4">
+            </video>
         </div>
-        <button class="transition-button" id="goToPage" onclick="window.location.href='page.html'">View My Designs</button>
+        <div class="brand-content">
+            <img src="logo.png" alt="Brand Logo" class="brand-logo">
+            <h1>Welcome to My Portfolio</h1>
+        </div>
     </header>
 
-
-
- <!---Bio Small-->  
-    <section id="bio">
-        <h2>About Me</h2>
-        <p>Hello! I'm Aleksandar, a passionate UX Designer and Web Developer from Calgary, Canada. I specialize in creating interactive websites with animations, transitions, and user-friendly designs. I’m always on the lookout for new challenges and opportunities to grow.</p>
+    <!-- LOGO DESIGNS -->
+    <section id="logo-designs">
+        <h2>Logo Designs</h2>
+        <div class="gallery">
+            <img src="logo1.jpg" alt="Logo 1">
+            <img src="logo2.jpg" alt="Logo 2">
+            <img src="logo3.jpg" alt="Logo 3">
+        </div>
+        <button class="see-more" data-type="logos">See More</button>
     </section>
 
-    <footer>
-        <p>Contact me: <a href="mailto:uxwebalex@gmail.com">uxwebalex@gmail.com</a></p>
-        <div class="linkedin-container">
-            <a href="https://www.linkedin.com/in/aleksandar-sremcevic/" target="_blank" aria-label="LinkedIn Profile">
-                <img src="/Other/social1.png" alt="LinkedIn Logo" class="linkedin-logo">
-            </a>
+    <!-- GRAPHIC DESIGNS -->
+    <section id="graphic-designs">
+        <h2>Graphic Designs</h2>
+        <div class="gallery">
+            <img src="graphic1.jpg" alt="Graphic 1">
+            <img src="graphic2.jpg" alt="Graphic 2">
+            <img src="graphic3.jpg" alt="Graphic 3">
         </div>
-    </footer>
-    
+        <button class="see-more" data-type="graphics">See More</button>
+    </section>
 
-    <script src="main.js"></script>
+    <!-- WEBSITE PROJECTS -->
+    <section id="websites">
+        <h2>Website Projects</h2>
+        <div class="video-gallery">
+            <video src="web1.mp4" autoplay loop muted></video>
+            <video src="web2.mp4" autoplay loop muted></video>
+            <video src="web3.mp4" autoplay loop muted></video>
+        </div>
+        <button class="see-more" data-type="websites">See More</button>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services">
+        <h2>Choose a Service</h2>
+        <div class="services-container">
+            <div class="service">Logo Design - $150</div>
+            <div class="service">Graphic Design - $200</div>
+            <div class="service">Website Design - $500</div>
+        </div>
+    </section>
+
+    <!-- VIEW MY GALLERY BUTTON -->
+    <section id="view-gallery">
+        <h2>View my gallery of design</h2>
+        <a href="https://example.com" target="_blank" class="view-gallery-button">View Gallery</a>
+    </section>
+
+    <!-- ABOUT ME -->
+    <section id="about">
+        <h2>About Me</h2>
+        <img src="me.jpg" alt="About Me" class="about-photo">
+        <p>I was born in Serbia, in a small town called Topola. My family has always been at the heart of everything I do, and I helped run our family business 'Igraonica Game House Topola.' At 15 and a half, I moved to Canada with my family and found a new life in Calgary.
+
+            As a creative person with a passion for technology, I fell in love with the world of UX design and interactive websites. Currently, I'm studying Interactive Design - User Experience Design Major at SAIT - Southern Alberta Institute Of Technology, aiming to build designs that are not only functional but also beautiful.
+            
+            When I'm not immersed in design, or coding different things, you can find me gaming, exploring new ideas, or spending time with my amazing girlfriend, Amanda, who motivates me every day. I’m always looking for ways to grow and improve, both in my personal and professional life.</p>
+    </section>
+
+    <!-- POPUP MENU -->
+    <div class="popup" id="popup">
+        <div class="popup-content">
+            <span class="close-popup">&times;</span>
+            <div class="popup-gallery" id="popup-gallery"></div>
+        </div>
+    </div>
+
+    <!-- ADDITIONAL IMAGES FOR POPUP MENUS -->
+    <div id="additional-images" style="display: none;">
+        <!-- Additional Logo Images -->
+        <div id="additional-logos">
+            <img src="images/additional-logos/logo4.jpg" alt="Logo 4">
+            <img src="images/additional-logos/logo5.jpg" alt="Logo 5">
+            <img src="images/additional-logos/logo6.jpg" alt="Logo 6">
+            <img src="images/additional-logos/logo7.jpg" alt="Logo 7">
+            <img src="images/additional-logos/logo8.jpg" alt="Logo 8">
+            <img src="images/additional-logos/logo9.jpg" alt="Logo 9">
+            <img src="images/additional-logos/logo10.jpg" alt="Logo 10">
+            <img src="images/additional-logos/logo11.jpg" alt="Logo 11">
+            <img src="images/additional-logos/logo12.jpg" alt="Logo 12">
+            <img src="images/additional-logos/logo13.jpg" alt="Logo 13">
+        </div>
+
+        <!-- Additional Graphic Images -->
+        <div id="additional-graphics">
+            <img src="images/additional-graphics/graphic4.jpg" alt="Graphic 4">
+            <img src="images/additional-graphics/graphic5.jpg" alt="Graphic 5">
+            <img src="images/additional-graphics/graphic6.jpg" alt="Graphic 6">
+            <img src="images/additional-graphics/graphic7.jpg" alt="Graphic 7">
+            <img src="images/additional-graphics/graphic8.jpg" alt="Graphic 8">
+            <img src="images/additional-graphics/graphic9.jpg" alt="Graphic 9">
+            <img src="images/additional-graphics/graphic10.jpg" alt="Graphic 10">
+            <img src="images/additional-graphics/graphic11.jpg" alt="Graphic 11">
+            <img src="images/additional-graphics/graphic12.jpg" alt="Graphic 12">
+            <img src="images/additional-graphics/graphic13.jpg" alt="Graphic 13">
+        </div>
+
+        <!-- Additional Website Videos -->
+        <div id="additional-websites">
+            <video src="videos/additional-websites/web4.mp4" autoplay loop muted></video>
+            <video src="videos/additional-websites/web5.mp4" autoplay loop muted></video>
+            <video src="videos/additional-websites/web6.mp4" autoplay loop muted></video>
+            <video src="videos/additional-websites/web7.mp4" autoplay loop muted></video>
+            <video src="videos/additional-websites/web8.mp4" autoplay loop muted></video>
+            <video src="videos/additional-websites/web9.mp4" autoplay loop muted></video>
+            <video src="videos/additional-websites/web10.mp4" autoplay loop muted></video>
+            <video src="videos/additional-websites/web11.mp4" autoplay loop muted></video>
+            <video src="videos/additional-websites/web12.mp4" autoplay loop muted></video>
+            <video src="videos/additional-websites/web13.mp4" autoplay loop muted></video>
+        </div>
+    </div>
+
+    <!-- ENLARGED IMAGE VIEW -->
+    <div class="enlarged-view" id="enlarged-view">
+        <span class="close-enlarged">&times;</span>
+        <img id="enlarged-image" src="" alt="Enlarged View">
+    </div>
+
+    <script src="index.js"></script>
 </body>
 </html>
- 
