@@ -50,14 +50,24 @@ header {
 }
 
 .brand-logo {
-    width: 120px;
+    width: 200px; /* Increased from 120px */
     animation: fadeIn 2s ease-in-out;
 }
 
 h1 {
-    font-size: 2.5rem;
+    font-size: 3.5rem; /* Increased from 2.5rem */
     margin-top: 20px;
     animation: slideDown 1.5s ease-in-out;
+}
+
+/* Update responsive design for smaller screens */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem; /* Increased from 1.8rem */
+    }
+    .brand-logo {
+        width: 150px; /* Added responsive size */
+    }
 }
 
 /* SECTIONS */
@@ -78,9 +88,9 @@ section {
 }
 
 .gallery img, .video-gallery video {
-    width: 100%;
-    max-width: 300px;
-    height: auto;
+    width: 250px; /* Increased width */
+    height: 250px; /* Increased height */
+    object-fit: cover; /* Ensure the image/video fits within the dimensions */
     border-radius: 10px;
     transition: transform 0.3s ease-in-out;
 }
@@ -110,8 +120,8 @@ section {
 
 /* ABOUT SECTION */
 .about-photo {
-    width: 150px;
-    height: 150px;
+    width: 200px; /* Increased width */
+    height: 200px; /* Increased height */
     border-radius: 50%;
     object-fit: cover;
     border: 5px solid #888; /* Changed to gray color */
@@ -187,7 +197,7 @@ section {
     max-width: 90%;
     max-height: 90%;
     overflow: auto;
-    background: rgb(245, 245, 245);
+    background: #27445D;
     padding: 20px;
     border-radius: 10px;
 }
@@ -200,8 +210,9 @@ section {
 }
 
 .popup img, .popup video {
-    width: 100%;
-    max-width: 150px;
+    width: 250px; /* Increased width */
+    height: 250px; /* Increased height */
+    object-fit: cover; /* Ensure the image/video fits within the dimensions */
     margin: 10px;
     border-radius: 10px;
     cursor: pointer;
@@ -212,7 +223,7 @@ section {
     top: 10px;
     right: 10px;
     background: red;
-    color: rgb(255, 255, 255);
+    color: #27445D;
     border: none;
     border-radius: 5px;
     padding: 5px 10px;
@@ -244,7 +255,7 @@ section {
     top: 10px;
     right: 10px;
     background: red;
-    color: white;
+    color: #27445D;
     border: none;
     border-radius: 5px;
     padding: 5px 10px;
@@ -260,6 +271,7 @@ section {
         flex-direction: column;
     }
 }
+
 /* GOOGLE FORM POPUP STYLING */
 .form-popup {
     position: fixed;
@@ -267,7 +279,7 @@ section {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.8);
+    background: #27445D;
     display: none;
     justify-content: center;
     align-items: center;
@@ -278,7 +290,7 @@ section {
     position: relative;
     width: 90%;
     height: 90%;
-    background: white;
+    background: #27445D;
     border-radius: 10px;
     overflow: hidden;
 }
@@ -288,10 +300,44 @@ section {
     top: 10px;
     right: 10px;
     background: red;
-    color: white;
+    color: #27445D;
     border: none;
     border-radius: 5px;
     padding: 5px 10px;
     cursor: pointer;
     z-index: 40;
+}
+/* FOOTER STYLING */
+footer {
+    background: #27445D;
+    padding: 30px 0;
+    margin-top: 50px;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.social-links {
+    margin-bottom: 20px;
+}
+
+.social-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #4572d4;
+}
+
+.copyright {
+    color: #ffffff;
+    font-size: 0.9rem;
+    margin: 0;
 }

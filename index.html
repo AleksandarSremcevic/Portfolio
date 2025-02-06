@@ -1,9 +1,12 @@
-<title>My Portfolio</title>
-<link rel="stylesheet" href="index.css">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
-
-    
     <!-- HEADER SECTION -->
     <header>
         <div class="video-container">
@@ -18,7 +21,7 @@
             </video>
         </div>
         <div class="brand-content">
-            <img src="logo.png" alt="Brand Logo" class="brand-logo">
+            <img src="portfolio-project/images/additional-logos/AS LOGO NOBCK.png" alt="Brand Logo" class="brand-logo">
             <h1>Welcome to My Portfolio</h1>
         </div>
     </header>
@@ -27,9 +30,9 @@
     <section id="logo-designs">
         <h2>Logo Designs</h2>
         <div class="gallery">
-            <img src="logo1.jpg" alt="Logo 1">
-            <img src="logo2.jpg" alt="Logo 2">
-            <img src="logo3.jpg" alt="Logo 3">
+            <img src="portfolio-project/images/additional-logos/(EMB) Délicieusement IL.png" alt="Logo 1">
+            <img src="portfolio-project/images/additional-logos/(LW) Flora IL.png" alt="Logo 2">
+            <img src="portfolio-project/images/additional-logos/(3D) Design IL.png" alt="Logo 3">
         </div>
         <button class="see-more" data-type="logos">See More</button>
     </section>
@@ -43,6 +46,17 @@
             <img src="graphic3.jpg" alt="Graphic 3">
         </div>
         <button class="see-more" data-type="graphics">See More</button>
+    </section>
+
+    <!-- PHOTOSHOP DESIGNS -->
+    <section id="photoshop-designs">
+        <h2>Photoshop Designs</h2>
+        <div class="gallery">
+            <img src="photoshop1.jpg" alt="Photoshop 1">
+            <img src="photoshop2.jpg" alt="Photoshop 2">
+            <img src="photoshop3.jpg" alt="Photoshop 3">
+        </div>
+        <button class="see-more" data-type="photoshop">See More</button>
     </section>
 
     <!-- WEBSITE PROJECTS -->
@@ -64,12 +78,6 @@
             <div class="service">Graphic Design - $150 - $350 </div>
             <div class="service">Website Design - $500 - $5000 </div>
         </div>
-    </section>
-
-    <!-- VIEW MY GALLERY BUTTON -->
-    <section id="view-gallery">
-        <h2>View my gallery of design</h2>
-        <a href="https://example.com" target="_blank" class="view-gallery-button">View Gallery</a>
     </section>
 
     <!-- ABOUT ME -->
@@ -95,16 +103,16 @@
     <div id="additional-images" style="display: none;">
         <!-- Additional Logo Images -->
         <div id="additional-logos">
-            <img src="images/additional-logos/logo4.jpg" alt="Logo 4">
-            <img src="images/additional-logos/logo5.jpg" alt="Logo 5">
-            <img src="images/additional-logos/logo6.jpg" alt="Logo 6">
-            <img src="images/additional-logos/logo7.jpg" alt="Logo 7">
-            <img src="images/additional-logos/logo8.jpg" alt="Logo 8">
-            <img src="images/additional-logos/logo9.jpg" alt="Logo 9">
-            <img src="images/additional-logos/logo10.jpg" alt="Logo 10">
-            <img src="images/additional-logos/logo11.jpg" alt="Logo 11">
-            <img src="images/additional-logos/logo12.jpg" alt="Logo 12">
-            <img src="images/additional-logos/logo13.jpg" alt="Logo 13">
+            <img src="portfolio-project/images/additional-logos/(EMB) Peng FC IL.png" alt="Logo 4">
+            <img src="portfolio-project/images/additional-logos/(LW) A R K IL.png" alt="Logo 5">
+            <img src="portfolio-project/images/additional-logos/(LW) DSGN IL.png" alt="Logo 6">
+            <img src="portfolio-project/images/additional-logos/(LW) Food IL.png" alt="Logo 7">
+            <img src="portfolio-project/images/additional-logos/(LW) TS IL.png" alt="Logo 8">
+            <img src="portfolio-project/images/additional-logos/(Simple) DT Care IL.png" alt="Logo 9">
+            <img src="portfolio-project/images/additional-logos/(Simple) Human Society  IL.png" alt="Logo 10">
+            <img src="portfolio-project/images/additional-logos/(Simple) Kids Day - Care IL.png" alt="Logo 11">
+            <img src="portfolio-project/images/additional-logos/(Simple) VV IL.png" alt="Logo 12">
+            <img src="portfolio-project/images/additional-logos/AS Logo IL.png" alt="Logo 13">
         </div>
 
         <!-- Additional Graphic Images -->
@@ -134,6 +142,17 @@
             <video src="videos/additional-websites/web12.mp4" autoplay loop muted></video>
             <video src="videos/additional-websites/web13.mp4" autoplay loop muted></video>
         </div>
+
+        <!-- Additional Photoshop Images -->
+        <div id="additional-photoshop">
+            <img src="images/additional-photoshop/photoshop4.jpg" alt="Photoshop 4">
+            <img src="images/additional-photoshop/photoshop5.jpg" alt="Photoshop 5">
+            <img src="images/additional-photoshop/photoshop6.jpg" alt="Photoshop 6">
+            <img src="images/additional-photoshop/photoshop7.jpg" alt="Photoshop 7">
+            <img src="images/additional-photoshop/photoshop8.jpg" alt="Photoshop 8">
+            <img src="images/additional-photoshop/photoshop9.jpg" alt="Photoshop 9">
+            <img src="images/additional-photoshop/photoshop10.jpg" alt="Photoshop 10">
+        </div>
     </div>
 
     <!-- ENLARGED IMAGE VIEW -->
@@ -150,35 +169,17 @@
         </div>
     </div>
 
-    <script src="index.js"></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", () => {
-            // Existing code...
+   <!-- FOOTER -->
+   <footer>
+    <div class="footer-content">
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/aleksandar-sremcevic/" target="_blank">LinkedIn</a>
+            <a href="https://www.instagram.com" target="_blank">Instagram</a>
+        </div>
+        <p class="copyright">© 2024 AS Design. All rights reserved.</p>
+    </div>
+</footer>
 
-            // Show Google Form popup
-            const showFormPopup = () => {
-                const formPopup = document.getElementById("form-popup");
-                formPopup.style.display = "flex";
-
-                const closeFormButton = document.querySelector(".close-form-popup");
-                closeFormButton.addEventListener("click", () => {
-                    formPopup.style.display = "none";
-                });
-
-                formPopup.addEventListener("click", (e) => {
-                    if (e.target === formPopup) {
-                        formPopup.style.display = "none";
-                    }
-                });
-            };
-
-            // Add click event to design services
-            document.querySelectorAll(".service").forEach(service => {
-                service.addEventListener("click", showFormPopup);
-            });
-
-            // Existing code...
-        });
-    </script>
+<script src="index.js"></script>
 </body>
 </html>

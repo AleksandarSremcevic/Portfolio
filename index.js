@@ -68,12 +68,55 @@ document.addEventListener("DOMContentLoaded", () => {
             let items = [];
             let type = "images";
             if (sectionId === "logos") {
-                items = Array.from({ length: 10 }, (_, i) => `images/additional-logos/logo${i + 4}.jpg`);
+                items = [
+                    "portfolio-project/images/additional-logos/(EMB) Peng FC IL.png",
+                    "portfolio-project/images/additional-logos/(LW) A R K IL.png",
+                    "portfolio-project/images/additional-logos/(LW) DSGN IL.png",
+                    "portfolio-project/images/additional-logos/(LW) Food IL.png",
+                    "portfolio-project/images/additional-logos/(LW) TS IL.png",
+                    "portfolio-project/images/additional-logos/(Simple) DT Care IL.png",
+                    "portfolio-project/images/additional-logos/(Simple) Human Society  IL.png",
+                    "portfolio-project/images/additional-logos/(Simple) Kids Day - Care IL.png",
+                    "portfolio-project/images/additional-logos/(Simple) VV IL.png",
+                    "portfolio-project/images/additional-logos/AS Logo IL.png"
+                ];
             } else if (sectionId === "graphics") {
-                items = Array.from({ length: 10 }, (_, i) => `images/additional-graphics/graphic${i + 4}.jpg`);
+                items = [
+                    "images/additional-graphics/graphic4.jpg",
+                    "images/additional-graphics/graphic5.jpg",
+                    "images/additional-graphics/graphic6.jpg",
+                    "images/additional-graphics/graphic7.jpg",
+                    "images/additional-graphics/graphic8.jpg",
+                    "images/additional-graphics/graphic9.jpg",
+                    "images/additional-graphics/graphic10.jpg",
+                    "images/additional-graphics/graphic11.jpg",
+                    "images/additional-graphics/graphic12.jpg",
+                    "images/additional-graphics/graphic13.jpg"
+                ];
             } else if (sectionId === "websites") {
-                items = Array.from({ length: 10 }, (_, i) => `videos/additional-websites/web${i + 3}.mp4`);
+                items = [
+                    "videos/additional-websites/web4.mp4",
+                    "videos/additional-websites/web5.mp4",
+                    "videos/additional-websites/web6.mp4",
+                    "videos/additional-websites/web7.mp4",
+                    "videos/additional-websites/web8.mp4",
+                    "videos/additional-websites/web9.mp4",
+                    "videos/additional-websites/web10.mp4",
+                    "videos/additional-websites/web11.mp4",
+                    "videos/additional-websites/web12.mp4",
+                    "videos/additional-websites/web13.mp4"
+                ];
                 type = "videos";
+            } else if (sectionId === "photoshop") {
+                items = [
+                    "images/additional-photoshop/photoshop4.jpg",
+                    "images/additional-photoshop/photoshop5.jpg",
+                    "images/additional-photoshop/photoshop6.jpg",
+                    "images/additional-photoshop/photoshop7.jpg",
+                    "images/additional-photoshop/photoshop8.jpg",
+                    "images/additional-photoshop/photoshop9.jpg",
+                    "images/additional-photoshop/photoshop10.jpg"
+                ];
             }
             createPopup(items, type);
         });
@@ -104,5 +147,26 @@ document.addEventListener("DOMContentLoaded", () => {
             showEnlargedView(img.src);
         });
     });
-});
 
+    // Show Google Form popup
+    const showFormPopup = () => {
+        const formPopup = document.getElementById("form-popup");
+        formPopup.style.display = "flex";
+
+        const closeFormButton = document.querySelector(".close-form-popup");
+        closeFormButton.addEventListener("click", () => {
+            formPopup.style.display = "none";
+        });
+
+        formPopup.addEventListener("click", (e) => {
+            if (e.target === formPopup) {
+                formPopup.style.display = "none";
+            }
+        });
+    };
+
+    // Add click event to design services
+    document.querySelectorAll(".service").forEach(service => {
+        service.addEventListener("click", showFormPopup);
+    });
+});
