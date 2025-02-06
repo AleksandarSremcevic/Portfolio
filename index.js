@@ -78,20 +78,23 @@ document.addEventListener("DOMContentLoaded", () => {
                     "portfolio-project/images/additional-logos/(Simple) Human Society  IL.png",
                     "portfolio-project/images/additional-logos/(Simple) Kids Day - Care IL.png",
                     "portfolio-project/images/additional-logos/(Simple) VV IL.png",
-                    "portfolio-project/images/additional-logos/AS Logo IL.png"
+                    "portfolio-project/images/additional-logos/AS Logo IL.png",
+                    "portfolio-project/images/additional-logos/UX Logo IL.png",
+           "portfolio-project/images/additional-logos/Fire Boost Logo IL.png"
                 ];
             } else if (sectionId === "graphics") {
                 items = [
-                    "images/additional-graphics/graphic4.jpg",
-                    "images/additional-graphics/graphic5.jpg",
-                    "images/additional-graphics/graphic6.jpg",
-                    "images/additional-graphics/graphic7.jpg",
-                    "images/additional-graphics/graphic8.jpg",
-                    "images/additional-graphics/graphic9.jpg",
-                    "images/additional-graphics/graphic10.jpg",
-                    "images/additional-graphics/graphic11.jpg",
-                    "images/additional-graphics/graphic12.jpg",
-                    "images/additional-graphics/graphic13.jpg"
+            "portfolio-project/images/additional-graphics/Eseence IL.png",
+            "portfolio-project/images/additional-graphics/Evelyn's Diner IL.png",
+            "portfolio-project/images/additional-graphics/Graphic Designs Menu Pic.png",
+            "portfolio-project/images/additional-graphics/Quote IL.png",
+            "portfolio-project/images/additional-graphics/Rerfrsh IL.png",
+            "portfolio-project/images/additional-graphics/Star IL.png",
+            "portfolio-project/images/additional-graphics/VM Clothing Bag IL.png",
+            "portfolio-project/images/additional-graphics/VM Clothing Tag IL.png",
+            "portfolio-project/images/additional-graphics/VM Clothing Tags OUT IL.png",
+            "portfolio-project/images/additional-graphics/Zule AI Computer IL.png",
+            "portfolio-project/images/additional-graphics/Zule AI Phone IL.png"
                 ];
             } else if (sectionId === "websites") {
                 items = [
@@ -109,13 +112,12 @@ document.addEventListener("DOMContentLoaded", () => {
                 type = "videos";
             } else if (sectionId === "photoshop") {
                 items = [
-                    "images/additional-photoshop/photoshop4.jpg",
-                    "images/additional-photoshop/photoshop5.jpg",
-                    "images/additional-photoshop/photoshop6.jpg",
-                    "images/additional-photoshop/photoshop7.jpg",
-                    "images/additional-photoshop/photoshop8.jpg",
-                    "images/additional-photoshop/photoshop9.jpg",
-                    "images/additional-photoshop/photoshop10.jpg"
+                    "portfolio-project/images/additional-photoshop/Calm2 PSD.png",
+                    "portfolio-project/images/additional-photoshop/Calmness PS.png",
+                    "portfolio-project/images/additional-photoshop/Excitment2 PSD.png",
+                    "portfolio-project/images/additional-photoshop/Magazine Cover IL.png",
+                    "portfolio-project/images/additional-photoshop/Magich Woods PSD.png",
+                   "portfolio-project/images/additional-photoshop/Whales Space PSD.png" 
                 ];
             }
             createPopup(items, type);
