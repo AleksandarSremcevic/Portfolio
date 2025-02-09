@@ -94,7 +94,16 @@ document.addEventListener("DOMContentLoaded", () => {
             "portfolio-project/images/additional-graphics/VM Clothing Tag IL.png",
             "portfolio-project/images/additional-graphics/VM Clothing Tags OUT IL.png",
             "portfolio-project/images/additional-graphics/Zule AI Computer IL.png",
-            "portfolio-project/images/additional-graphics/Zule AI Phone IL.png"
+            "portfolio-project/images/additional-graphics/Zule AI Phone IL.png",
+            "portfolio-project/images/additional-graphics/Chocolate-or-Candy-Bar-Mockup-PSD.png",
+            "portfolio-project/images/additional-graphics/G-Chocolate Van PSD.png",
+            "portfolio-project/images/additional-graphics/Wolf Cards IL.jpg",
+            "portfolio-project/images/additional-graphics/Wolf App PSD.png",
+            "portfolio-project/images/additional-graphics/Wolf Cap PSD.png",
+            "portfolio-project/images/additional-graphics/Wolf Clothing PSD.png",
+            "portfolio-project/images/additional-graphics/X-EX Shirt PSD.png",
+            "portfolio-project/images/additional-graphics/X-EX Hoodie PSD.png",
+            "portfolio-project/images/additional-graphics/X-EX Board PSD.png"
                 ];
             } else if (sectionId === "websites") {
                 items = [
